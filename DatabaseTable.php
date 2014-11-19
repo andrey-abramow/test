@@ -15,7 +15,7 @@ abstract class DatabaseTable {
 		if($params){
 			foreach ($params as $key => $value) {
 				if($key[0] != '_') // keys starting by underscore (_) are ignored
-					$this->$key = $value;
+				$this->$key = $value;
 			}
 	    }
 	}
@@ -92,8 +92,8 @@ abstract class DatabaseTable {
 	}
 	 
 	
-	function destroy($id) {
-		$sql = "DELETE FROM $this->_name WHERE id = $id LIMIT 1";
+	function destroy() {
+		$sql = "DELETE FROM $this->_name WHERE id = $this->id LIMIT 1";
 		
 		return self::$_database->query($sql);
 	}

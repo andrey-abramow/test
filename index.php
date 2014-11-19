@@ -2,7 +2,7 @@
 require_once "Comments.php";
 $rows = Comments::find(); 
 //$tt = Comments::find(352);
-//$tt->author = "annasss";
+//$tt->author = "andrey abramow";
 //$tt->save();
 
 ?>
