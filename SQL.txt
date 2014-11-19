@@ -1,0 +1,5 @@
+CREATE TABLE `comments` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `author` VARCHAR(255) NULL,
+  `content` TEXT NULL
+);
